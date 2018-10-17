@@ -1,0 +1,7 @@
+#Esse Playbook permite fazer a instalação do navegador Google-Chrome no Windows  através de um comando PowerShell
+- name: install google-chrome
+  hosts: all
+
+  tasks:
+    - name: instalando o chrome
+      win_shell: $Path = $env:TEMP; $Installer = "chrome_installer.exe"; Invoke-WebRequest "http://dl.google.com/chrome/install/375.126/chrome_installer.exe" -OutFile $Path\$Installer; Start-Process -FilePath $Path\$Installer -Args "/silent /install" -Verb RunAs -Wait; Remove-Item $Path\$Installer

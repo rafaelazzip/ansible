@@ -1,0 +1,9 @@
+#Esse playbook permite criar a uma nova pasta e movê-la para um determinado destino
+- name: create a new folder
+  hosts: all
+  
+  tasks:
+    - name: criando nova pasta 
+      win_shell: mkdir "Nova Pasta"
+    - name: movendo a pasta para o desktop
+      win_shell: mv ".\Nova Pasta" C:\Users\Administrador\Desktop

@@ -1,0 +1,7 @@
+# Este playbook usa o ping para testar a conexão com um host Windows
+- name: Ping 
+  hosts: all 
+
+  tasks:
+    - name: ping
+      win_ping:

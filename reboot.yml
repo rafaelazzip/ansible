@@ -1,0 +1,7 @@
+#Esse playbook permite rebootar/reiniciar uma máquina windows
+---
+  - hosts: all
+
+    tasks:
+      - name: reboot
+        win_reboot: 

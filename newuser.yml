@@ -1,0 +1,12 @@
+#Esse playbook permite criar  um usuário no windows
+- name: Ensure user rafael is present
+  hosts: all
+  
+  tasks:
+    - name: Ensure user rafael is present
+      win_user:
+        name: rafael
+        senha: senha
+        state: present
+        groups:
+          - Administradores

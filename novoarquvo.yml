@@ -1,0 +1,4 @@
+- name: Touch a file (creates if not present, updates modification time if present)
+  win_file:
+    path: C:\Administrador\Desktop\"new.txt"
+    state: touch
