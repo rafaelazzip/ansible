@@ -5,4 +5,4 @@
   tasks:
     - name: abrindo o navegador
       win_shell: start Chrome.exe "www.github.com"
-
+      

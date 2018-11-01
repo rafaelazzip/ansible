@@ -1,0 +1,9 @@
+# Esse playbook envia uma mensagem para o usuário logado no host windows
+- name: Enviar mensagem para um usuário logado no host
+  host: all
+
+  tasks:
+    -  name :  Enviando mensagem para o usuário 
+  win_msg : 
+    display_seconds :  10 
+    msg :  Hello World!!!  #{{  deployment_start_time  }}
