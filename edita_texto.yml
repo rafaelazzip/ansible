@@ -8,4 +8,4 @@
         path: C:\Users\Administrador\Desktop\texto.txt
         regexp: '(^segunda linha)'
         line: 'quarta linha'
-        status: absent
+        #status: absent
