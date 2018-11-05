@@ -2,8 +2,8 @@
 # este playbook permite utilizar scripst power shell
 - name: Run powershell script
   hosts: all 
-  gather_facts: false
+  gather_facts: true
 
   tasks:
     - name: Run powershell script
-      script: files/{{shell_executar}}
+      var: files/{{shell_executar}}
