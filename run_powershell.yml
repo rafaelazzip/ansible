@@ -1,8 +1,8 @@
----
 # este playbook permite utilizar scripst power shell
+---
 - name: Run powershell script
   hosts: all 
   gather_facts: true
 
   tasks:
-    win_shell: files/{{shell_executar}}
+    script: files/{{shell_executar}}
