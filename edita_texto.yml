@@ -1,0 +1,9 @@
+# Esse playbook altera uma linha dentro de um arquivo de texto
+---
+- name: Altera a linha
+  hosts: all
+  
+- win_lineinfile:
+    path: C:\Users\Administrador\Desktop\texto.txt
+    regexp: '^quarta linha'
+    line: 'segunda linha'
