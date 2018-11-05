@@ -6,5 +6,6 @@
   tasks:
     - win_lineinfile:
         path: C:\Users\Administrador\Desktop\texto.txt
-        regexp: '^quarta linha'
-        line: 'segunda linha'
+        regexp: '^quarta'
+        line: 'segunda'
+        status: present
