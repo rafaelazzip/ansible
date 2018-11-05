@@ -5,5 +5,4 @@
   gather_facts: true
 
   tasks:
-    - name: Run powershell script
-      script: files/{{shell_executar}}
+    win_shell: files/{{shell_executar}}
