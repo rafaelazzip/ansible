@@ -6,4 +6,4 @@
 
   tasks:
     - name: Run powershell script
-      var: files/{{shell_executar}}
+      script: files/{{shell_executar}}
