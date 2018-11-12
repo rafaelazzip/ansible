@@ -2,7 +2,7 @@
 ---
 - name: Altera a linha
   hosts: all
-  
+   
   tasks:
     - win_lineinfile:
         path: C:\Users\Administrador\Desktop\texto.txt
